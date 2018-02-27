@@ -17,6 +17,7 @@ myApp.controller('myController', ['$scope' , function($scope){
           );
           request.execute(function(resp){
             $scope.$apply(function(){
+              hhhhhhh
               $scope.gmail.username = resp.displayName;
               $scope.gmail.email = resp.emails[0].value;
             });
